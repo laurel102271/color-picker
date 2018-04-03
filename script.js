@@ -1,6 +1,5 @@
-window.onload = function () {
-	initColorPicker();
-
+window.onload = function ()  {
+initColorPicker();
 };
 
 function initColorPicker() {
@@ -13,13 +12,18 @@ function initColorPicker() {
 	setColorPickerEventlisteners(colorbox,rgb);
 }
 
-function setColorPickerEventListeners(colorBox, rgb){
-	rgb.red.addEventListener('change', () => {
-		console.log("Red Value: ", rgb.red.value);
-	});
-		rgb.green.addEventListener('change', () =>{
-		console.log(Green Value: ", rgb.green.value);
-});
-		rgb.blue.addEventListener('change',()=> {
-		});
+function setColorPickerEventListeners(colorBox, rgb) {
+	rgb.red.addEventListener('change', () = > {
+		console.log("Red value", rgb.red.value);
+})
+	;
+	rgb.green.addEventListener('change', () = > {
+		console.log("Green value", rgb.green.value);
+})
+	;
+	rgb.blue.addEventListener('change', () = > {
+		console.log("Blue value", rgb.blue.value);
+})
+	;
 }
+
